@@ -1,0 +1,94 @@
+body{
+    font-size: 15px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.container div{
+    text-align: left;
+    padding: 40px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+h1{
+    color: hsl(0, 0%, 95%);
+    margin: 40px 0;
+    font-family: Big Shoulders Display;
+    font-weight: 700;
+    font-size: 40px;
+}
+p{
+    max-width: 210px;
+    line-height: 1.8;
+    font-family: inherit;
+    font-weight: inherit;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.plan1{
+    background: hsl(31, 77%, 52%);
+}
+.plan2{
+    background: hsl(184, 100%, 22%);
+}
+.plan3{
+    background: hsl(179, 100%, 13%);
+}
+button{
+    border: solid 3px hsl(0, 0%, 95%);
+    border-radius: 40px;
+    background: hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 15px;
+    width: 140px;
+    margin-top: 100px;
+    font-family: inherit;
+    font-weight: inherit;
+}
+button:active:focus{
+    background-color: inherit;
+    color: hsl(0, 0%, 95%);
+    border: solid 3px hsl(0, 0%, 95%);
+}
+
+
+.plan1 button{color: hsl(31, 77%, 52%);}
+.plan2 button{color: hsl(184, 100%, 22%);}
+.plan3 button{color: hsl(179, 100%, 13%);}
+
+@media (max-width: 579.98px) { 
+    .container{
+        margin: 80px auto;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 580px) and (max-width: 767.98px) { 
+    .container{
+        margin: 80px auto;
+        width: 580px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 869.98px) { 
+    .container{
+        margin: 80px auto;
+        width: 580px;
+    }
+}
+
+
+
